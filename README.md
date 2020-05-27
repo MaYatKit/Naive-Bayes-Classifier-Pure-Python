@@ -1,1 +1,1 @@
-# Native-Nayes-classifier-pure-Python-
+# Native-Bayes-classifier-pure-Python
