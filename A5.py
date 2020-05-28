@@ -432,7 +432,11 @@ if __name__ == '__main__':
     # test_set = []  # read test set
     # with open(Script.test_file) as csv_file:
     #     csv_reader = csv.reader(csv_file, delimiter=',')
+    #     index = 0
     #     for row in csv_reader:
+    #         if index == 0:  # skip first line
+    #             index = 1
+    #             continue
     #         test_set.append(row[1])
     #
     # if you want to test a dataset, please first load into a
