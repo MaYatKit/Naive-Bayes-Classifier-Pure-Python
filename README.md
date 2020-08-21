@@ -1,4 +1,4 @@
-# Naive-Bayes-classifier-pure-Python
+# Naive-Bayes-Classifier-Pure-Python
 
 Apply Chi-square score to filter out less important fields.
 
