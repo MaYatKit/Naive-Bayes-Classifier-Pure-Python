@@ -16,7 +16,7 @@ The data set containing the abstracts of research papers that deal with proteins
 
 The third attribute (abstract) in the record is a character string containing the abstract to be classified. The string is preprocessed: it contains only whitespace, alphanumerical lowercase characters, digits, the dash (-) and the prime ('). Each contiguous sequence of non-whitespace characters framed by whitespace is considered a word.
 
-The file [trg.csv](trg.csv) is the training set on which you have to train your Naive Bayes classifier. The file [tst.csv](tst.csv) is the test set (without the classes) for which we have to generate classifications and submit.
+The file [trg.csv](trg.csv) is the training set on which you have to train the Naive Bayes classifier. The file [tst.csv](tst.csv) is the test set (without the classes) for which we have to generate classifications and submit.
 
 ### Solution
 First of all, we define the first 3600 lines of the [trg.csv](trg.csv) as the training set and the rest as validation set. Then we calculate Chi-Square score for every word in the training set and find the most 1000 important words; [chi_square_score.txt](chi_square_score.txt) records Chi-Square scores of all words in the training set and words in [most_important.txt](chi_square_score.txt) are the most 1000 important words; Finally, we apply multi-nominal NBC classifier to predict protein class. These algorithms can be found in [A5.py](A5.py), and the definition of multi-nominal NBC classifier can be found in [wiki](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_na%C3%AFve_Bayes).
