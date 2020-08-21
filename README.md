@@ -1,6 +1,6 @@
 # Naive-Bayes-Classifier-Pure-Python
 
-Apply Chi-square score to filter out less important fields.
+Apply **Chi-Square Score** to filter out less important fields and **Multi-Nominal NBC Classifier** to predict result.
 
 ## Description
 
